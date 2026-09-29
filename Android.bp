@@ -768,7 +768,7 @@ cc_prebuilt_library_shared {
             srcs: ["libprotobuf/arm/libprotobuf-cpp-full-21.12.so"],
         },
         android_arm64: {
-            srcs: select(soong_config_variable("lineageVarsPlugin", "TARGET_MAX_PAGE_SIZE_SUPPORTED"), {
+            srcs: select(soong_config_variable("neotericVarsPlugin", "TARGET_MAX_PAGE_SIZE_SUPPORTED"), {
                 "16384": ["libprotobuf/arm64_16k/libprotobuf-cpp-full-21.12.so"],
                 default: ["libprotobuf/arm64/libprotobuf-cpp-full-21.12.so"],
             }),
@@ -792,7 +792,7 @@ cc_prebuilt_library_shared {
             srcs: ["libprotobuf/arm/libprotobuf-cpp-lite-21.12.so"],
         },
         android_arm64: {
-            srcs: select(soong_config_variable("lineageVarsPlugin", "TARGET_MAX_PAGE_SIZE_SUPPORTED"), {
+            srcs: select(soong_config_variable("neotericVarsPlugin", "TARGET_MAX_PAGE_SIZE_SUPPORTED"), {
                 "16384": ["libprotobuf/arm64_16k/libprotobuf-cpp-lite-21.12.so"],
                 default: ["libprotobuf/arm64/libprotobuf-cpp-lite-21.12.so"],
             }),
@@ -815,7 +815,7 @@ cc_prebuilt_library_shared {
             srcs: ["libprotobuf/arm/libprotobuf-cpp-lite-21.12.so"],
         },
         android_arm64: {
-            srcs: select(soong_config_variable("lineageVarsPlugin", "TARGET_MAX_PAGE_SIZE_SUPPORTED"), {
+            srcs: select(soong_config_variable("neotericVarsPlugin", "TARGET_MAX_PAGE_SIZE_SUPPORTED"), {
                 "16384": ["libprotobuf/arm64_16k/libprotobuf-cpp-lite-21.12.so"],
                 default: ["libprotobuf/arm64/libprotobuf-cpp-lite-21.12.so"],
             }),
